@@ -1,0 +1,105 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ICS-Agent//XV de France Rugby//FR
+METHOD:REQUEST
+X-WR-CALNAME:XV de France – Nations Championship 2026
+X-WR-TIMEZONE:Europe/Paris
+X-WR-CALDESC:Matchs du XV de France - Nations Championship 2026 (v2). Sources : billetterie.ffr.fr + info.fr
+
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+X-LIC-LOCATION:Europe/Paris
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+END:STANDARD
+END:VTIMEZONE
+
+BEGIN:VEVENT
+UID:xv-de-france-nc2026-j1-nzl-fra@ics-agent
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:🏉 Nouvelle-Zélande – France (Nations Championship J1)
+DTSTART;TZID=Europe/Paris:20260704T091000
+DTEND;TZID=Europe/Paris:20260704T111000
+LOCATION:Christchurch, Nouvelle-Zélande (stade précis TBC)
+DESCRIPTION:Nations Championship 2026 - Journée 1\n\nNouvelle-Zélande vs France\nCoup d'envoi : 09h10 heure Paris (CEST) | 21h10 NZST (UTC+12)\nVille confirmée : Christchurch\n\nFiabilité : ÉLEVÉE (date, heure, ville confirmées - stade précis non annoncé)\nSource : https://info.fr/xv-de-france-programme-nations-championship/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:xv-de-france-nc2026-j2-aus-fra@ics-agent
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:🏉 Australie – France (Nations Championship J2)
+DTSTART;TZID=Europe/Paris:20260711T094000
+DTEND;TZID=Europe/Paris:20260711T114000
+LOCATION:Brisbane, Australie (stade précis TBC)
+DESCRIPTION:Nations Championship 2026 - Journée 2\n\nAustralie vs France\nCoup d'envoi : 09h40 heure Paris (CEST) | 17h40 AEST (UTC+10)\nVille confirmée : Brisbane\n\nFiabilité : ÉLEVÉE (date, heure, ville confirmées - stade précis non annoncé)\nSource : https://info.fr/xv-de-france-programme-nations-championship/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:xv-de-france-nc2026-j3-jpn-fra@ics-agent
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:🏉 Japon – France (Nations Championship J3)
+DTSTART;TZID=Europe/Paris:20260718T104000
+DTEND;TZID=Europe/Paris:20260718T124000
+LOCATION:Tokyo, Japon (stade précis TBC)
+DESCRIPTION:Nations Championship 2026 - Journée 3\n\nJapon vs France\nCoup d'envoi : 10h40 heure Paris (CEST) | 17h40 JST (UTC+9)\nVille confirmée : Tokyo\n\nFiabilité : ÉLEVÉE (date, heure, ville confirmées - stade précis non annoncé)\nSource : https://info.fr/xv-de-france-programme-nations-championship/
+END:VEVENT
+
+BEGIN:VEVENT
+UID:xv-de-france-nc2026-j4-fra-fij@ics-agent
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:🏉 France – Fidji (Nations Championship J4)
+DTSTART;TZID=Europe/Paris:20261107T211000
+DTEND;TZID=Europe/Paris:20261107T231000
+LOCATION:Groupama Stadium, Lyon
+DESCRIPTION:Nations Championship 2026 - Journée 4\n\nFrance vs Fidji\nCoup d'envoi : 21h10 CET\nStade : Groupama Stadium (OL Stadium), Lyon\n\nMISE A JOUR v2 : date corrigée (7 nov. au lieu de 6 nov.), heure corrigée (21h10 au lieu de 14h), lieu confirmé (Lyon)\n\nFiabilité : ÉLEVÉE (date, heure, stade confirmés - billetterie officielle FFR)\nSource : https://billetterie.ffr.fr/fr
+END:VEVENT
+
+BEGIN:VEVENT
+UID:xv-de-france-nc2026-j5-fra-rsa@ics-agent
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:🏉 France – Afrique du Sud (Nations Championship J5)
+DTSTART;TZID=Europe/Paris:20261113T211000
+DTEND;TZID=Europe/Paris:20261113T231000
+LOCATION:Stade de France, Saint-Denis
+DESCRIPTION:Nations Championship 2026 - Journée 5\n\nFrance vs Afrique du Sud (Springboks)\nCoup d'envoi : 21h10 CET\nStade : Stade de France, Saint-Denis\n\nMISE A JOUR v2 : heure corrigée (21h10 au lieu de 14h)\n\nFiabilité : ÉLEVÉE (date, heure, stade confirmés - billetterie officielle FFR)\nSource : https://billetterie.ffr.fr/fr
+END:VEVENT
+
+BEGIN:VEVENT
+UID:xv-de-france-nc2026-j6-fra-arg@ics-agent
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:🏉 France – Argentine (Nations Championship J6)
+DTSTART;TZID=Europe/Paris:20261121T211000
+DTEND;TZID=Europe/Paris:20261121T231000
+LOCATION:Stade de France, Saint-Denis
+DESCRIPTION:Nations Championship 2026 - Journée 6\n\nFrance vs Argentine (Los Pumas)\nCoup d'envoi : 21h10 CET\nStade : Stade de France, Saint-Denis\n\nMISE A JOUR v2 : heure corrigée (21h10 au lieu de 14h)\n\nFiabilité : ÉLEVÉE (date, heure, stade confirmés - billetterie officielle FFR)\nSource : https://billetterie.ffr.fr/fr
+END:VEVENT
+
+BEGIN:VEVENT
+UID:xv-de-france-nc2026-finale-twickenham@ics-agent
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:🏆 Nations Championship – Week-end de finales (Twickenham)
+DTSTART;TZID=Europe/Paris:20261127T120000
+DTEND;TZID=Europe/Paris:20261129T210000
+LOCATION:Allianz Stadium (Twickenham), Londres, Angleterre
+DESCRIPTION:Nations Championship 2026 - Week-end de finales\nVendredi 27 au dimanche 29 novembre 2026\n\n6 matchs sur 3 jours (classements croisés Nord vs Sud)\n- Ven. 27 nov. : 6e Nord vs 6e Sud | 5e Nord vs 5e Sud\n- Sam. 28 nov. : 4e Nord vs 4e Sud | 3e Nord vs 3e Sud\n- Dim. 29 nov. : 2e Nord vs 2e Sud | GRANDE FINALE : 1er Nord vs 1er Sud\n\nParticipation et journée exacte de la France selon classement final\n\nMISE A JOUR v2 : nom du stade précisé (Allianz Stadium)\n\nFiabilité : ÉLEVÉE (format, stade, dates confirmés World Rugby)\nSource : https://allianzstadiumtwickenham.com/nations-championship-finals-weekend
+END:VEVENT
+
+END:VCALENDAR
