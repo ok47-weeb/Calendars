@@ -5,8 +5,7 @@ METHOD:REQUEST
 CALSCALE:GREGORIAN
 X-WR-CALNAME:T1 – LoL 2026 – Toutes Compétitions
 X-WR-TIMEZONE:Europe/Paris
-X-WR-CALDESC:Calendrier T1 League of Legends 2026 – v2. Généré par ICS Agen
- t. Fuseau Europe/Paris.
+X-WR-CALDESC:T1 LoL 2026 v4 – Fuseau Europe/Paris – ICS Agent
 BEGIN:VTIMEZONE
 TZID:Europe/Paris
 X-LIC-LOCATION:Europe/Paris
@@ -27,196 +26,226 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:t1-lol-2026-msi-playin-d1-t1vstl@ics-agent
-DTSTAMP:20260622T191809Z
-SEQUENCE:0
+DTSTAMP:20260630T195508Z
+SEQUENCE:1
 STATUS:CONFIRMED
 DTSTART;TZID=Europe/Paris:20260628T050000
 DTEND;TZID=Europe/Paris:20260628T090000
 SUMMARY:MSI 2026 Play-In J1 – T1 vs Team Liquid Alienware
 LOCATION:Daejeon Convention Center II\, Daejeon\, Corée du Sud
-DESCRIPTION:Match confirmé : T1 vs Team Liquid Alienware (BO5\, Fearless Dr
- aft).\nHeure : 05h00 Paris (CEST) = 03h00 UTC = 12h00 KST.\nFiabilité : ÉL
- EVÉE — date & heure confirmées Riot Games.\nSource : https://lolesports.co
- m/en-US/news/msi-2026-primer
+DESCRIPTION:✅ RÉSULTAT : T1 3-0 Team Liquid Alienware.\nMatch joué le 28/06
+ /2026 à 05h00 CEST. BO5 Fearless Draft.\nT1 qualifié directement en Upper 
+ Bracket Final.\nSource : https://lolesports.com
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-msi-playin-d2@ics-agent
-DTSTAMP:20260622T191809Z
-SEQUENCE:1
-STATUS:CONFIRMED
+DTSTAMP:20260630T195508Z
+SEQUENCE:2
+STATUS:CANCELLED
 DTSTART;VALUE=DATE:20260629
 DTEND;VALUE=DATE:20260630
-SUMMARY:MSI 2026 Play-In J2 – T1 joue (adversaire TBD)
+SUMMARY:[ANNULÉ] MSI 2026 Play-In J2 all-day marker
 LOCATION:Daejeon Convention Center II\, Daejeon\, Corée du Sud
-DESCRIPTION:T1 joue le 29/06 (créneau 05h00 ou 10h00 Paris selon résultat J
- 1). Adversaire TBD.\n2 matchs programmés ce jour : T1 dans l’un d’eux.\nFi
- abilité : ÉLEVÉE (date) — heure & adversaire conditionnels.\n→ Mise à jour
-  dès résultat J1 connu.\nSource : https://lolesports.com/en-US/news/msi-20
- 26-primer
+DESCRIPTION:Remplacé par deux événements timed en v3.
+END:VEVENT
+BEGIN:VEVENT
+UID:t1-lol-2026-msi-playin-d2-upper@ics-agent
+DTSTAMP:20260630T195508Z
+SEQUENCE:1
+STATUS:CONFIRMED
+DTSTART;TZID=Europe/Paris:20260629T050000
+DTEND;TZID=Europe/Paris:20260629T090000
+SUMMARY:MSI 2026 Play-In J2 – Upper Bracket – T1 vs Karmine Corp
+LOCATION:Daejeon Convention Center II\, Daejeon\, Corée du Sud
+DESCRIPTION:✅ RÉSULTAT : T1 3-0 Karmine Corp.\nMatch joué le 29/06/2026 à 0
+ 5h00 CEST. BO5 Fearless Draft.\nT1 qualifié directement en Play-In Finale.
+  KC → Losers Bracket.\nSource : https://lolesports.com
+END:VEVENT
+BEGIN:VEVENT
+UID:t1-lol-2026-msi-playin-d2-lower@ics-agent
+DTSTAMP:20260630T195508Z
+SEQUENCE:1
+STATUS:CANCELLED
+DTSTART;TZID=Europe/Paris:20260629T100000
+DTEND;TZID=Europe/Paris:20260629T140000
+SUMMARY:[ANNULÉ] MSI 2026 Play-In J2 – Lower Bracket (T1 si défaite J1)
+LOCATION:Daejeon Convention Center II\, Daejeon\, Corée du Sud
+DESCRIPTION:T1 a gagné J1 (3-0 vs TL) → était en Upper Bracket. Cet événeme
+ nt est annulé.
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-msi-playin-d3@ics-agent
-DTSTAMP:20260622T191809Z
-SEQUENCE:1
-STATUS:TENTATIVE
-DTSTART;VALUE=DATE:20260630
-DTEND;VALUE=DATE:20260701
-SUMMARY:MSI 2026 Play-In J3 – T1 si Losers Bracket
+DTSTAMP:20260630T195508Z
+SEQUENCE:3
+STATUS:CANCELLED
+DTSTART;TZID=Europe/Paris:20260630T100000
+DTEND;TZID=Europe/Paris:20260630T140000
+SUMMARY:[ANNULÉ] MSI 2026 Play-In J3 – Lower Bracket R2
 LOCATION:Daejeon Convention Center II\, Daejeon\, Corée du Sud
-DESCRIPTION:T1 présent uniquement si défaite en J2 (Losers Bracket). Advers
- aire TBD.\nFiabilité : MOYENNE — date confirmée\, participation conditionn
- elle.\n→ Mise à jour dès résultat J2 connu.\nSource : https://lolesports.c
- om/en-US/news/msi-2026-primer
+DESCRIPTION:T1 ne joue pas ce jour : qualifié directement en Play-In Finale
+  (Upper Bracket).\nMatch du jour : Team Liquid 3-0 Karmine Corp (KC élimin
+ ée\, 10e place).
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-msi-playin-final@ics-agent
-DTSTAMP:20260622T191809Z
-SEQUENCE:1
-STATUS:TENTATIVE
-DTSTART;VALUE=DATE:20260701
-DTEND;VALUE=DATE:20260702
-SUMMARY:MSI 2026 Play-In – Finale (→ Bracket Stage)
+DTSTAMP:20260630T195508Z
+SEQUENCE:3
+STATUS:CONFIRMED
+DTSTART;TZID=Europe/Paris:20260701T100000
+DTEND;TZID=Europe/Paris:20260701T150000
+SUMMARY:MSI 2026 Play-In Finale – T1 vs Team Liquid Alienware (→ Bracket)
 LOCATION:Daejeon Convention Center II\, Daejeon\, Corée du Sud
-DESCRIPTION:Finale du Play-In MSI 2026. Le vainqueur rejoint le Bracket Sta
- ge (8 équipes).\nT1 présent selon parcours Play-In. Adversaire TBD.\nFiabi
- lité : ÉLEVÉE (date) — participants TBD.\n→ Mise à jour dès résultats J2/J
- 3 connus.\nSource : https://lolesports.com/en-US/news/msi-2026-primer
+DESCRIPTION:Finale du Play-In MSI 2026 : T1 vs Team Liquid Alienware (REVAN
+ CHE J1).\nHeure : 10h00 CEST. BO5 Fearless Draft. Un seul qualifié pour le
+  Bracket Stage.\nT1 invaincu (2-0\, 6-0 en maps). TL doit gagner 3-0/3-1/3
+ -2 pour se qualifier.\nSi T1 gagne → affrontera BLG (LPL 1st seed) en Brac
+ ket Stage R1 (3-6 juillet).\nFiabilité : ÉLEVÉE — adversaire et heure conf
+ irmés.\nSource : https://lolesports.com
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-msi-bracket@ics-agent
-DTSTAMP:20260622T191809Z
-SEQUENCE:1
+DTSTAMP:20260630T195508Z
+SEQUENCE:2
 STATUS:TENTATIVE
 DTSTART;VALUE=DATE:20260703
 DTEND;VALUE=DATE:20260704
-SUMMARY:MSI 2026 – Bracket Stage J1 (T1 si qualifié Play-In)
+SUMMARY:MSI 2026 – Bracket Stage J1 (T1 si qualifié Play-In Finale)
 LOCATION:Daejeon Convention Center II\, Daejeon\, Corée du Sud
-DESCRIPTION:Début du Bracket Stage MSI 2026 (8 équipes\, double-élimination
-  BO5 Fearless Draft).\nT1 présent si victoire en Play-In Finale (01/07). S
- tructure : R1 3-6/07 → Final 12/07.\nFiabilité : ÉLEVÉE (date ouverture) —
-  T1 participation conditionnelle\, matchs TBD.\n→ Mise à jour dès le brack
- et publié.\nSource : https://lolesports.com/en-US/news/msi-2026-primer
+DESCRIPTION:Début Bracket Stage MSI 2026 (8 équipes\, double-élim.\, BO5 Fe
+ arless Draft).\nT1 présent si victoire en Finale Play-In (01/07 10h00 vs T
+ L).\nHoraires : Quarts 3-6/07 à 05h00 CEST • Upper Final 9/07 10h00 • Lowe
+ r Semis 10/07 10h00 • Lower Final 11/07 10h00 • Grand Final 12/07 07h00 CE
+ ST.\nSi T1 qualifié : 1er match vs BLG (LPL 1st seed\, First Stand 2026 ch
+ ampion).\nFiabilité : ÉLEVÉE (horaires) — T1 participation conditionnelle.
+ \n→ Mise à jour dès résultat Finale Play-In (01/07).\nSource : https://lol
+ esports.com/en-US/news/msi-2026-primer
+END:VEVENT
+BEGIN:VEVENT
+UID:t1-lol-2026-ewc2026-opening@ics-agent
+DTSTAMP:20260630T195508Z
+SEQUENCE:0
+STATUS:CONFIRMED
+DTSTART;VALUE=DATE:20260708
+DTEND;VALUE=DATE:20260709
+SUMMARY:EWC 2026 – Cérémonie d’ouverture (La Seine Musicale\, Paris)
+LOCATION:La Seine Musicale\, Paris\, France
+DESCRIPTION:Cérémonie d’ouverture officielle EWC 2026 à La Seine Musicale (
+ Paris).\nArtistes : DJ Snake\, Aya Nakamura & Theodora.\nT1 présent (quali
+ fié EWC LoL 2026\, Pool 2).\nFiabilité : ÉLEVÉE.\nSource : https://esports
+ worldcup.com/en/competitions/2026/league-of-legends
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-ewc2026-lol@ics-agent
-DTSTAMP:20260622T191809Z
-SEQUENCE:1
+DTSTAMP:20260630T195508Z
+SEQUENCE:2
 STATUS:CONFIRMED
 DTSTART;VALUE=DATE:20260715
 DTEND;VALUE=DATE:20260716
-SUMMARY:EWC 2026 LoL – J1 (Paris) — T1 qualifié
+SUMMARY:EWC 2026 LoL – J1 (Paris) — T1 qualifié Korea Qualifier
 LOCATION:Paris\, France
-DESCRIPTION:Début de l’Esports World Cup 2026 – LoL à Paris.\nT1 QUALIFIÉ (
- vainqueur Korea Online Qualifier). 16 équipes\, prize pool 2 000 000 USD.\
- nFormat : groupes GSL → playoffs single-élimination. Lieu exact Paris TBD.
- \nFiabilité : ÉLEVÉE (date + qualification T1 confirmées) — matchs T1 TBD.
- \n→ Mise à jour dès le calendrier EWC publié.\nSource qualification : http
- s://escharts.com/news/t1-secure-lol-esports-world-cup-2026-spot-qualifier-
- crosses-500k-peak-viewers
+DESCRIPTION:Début EWC 2026 LoL à Paris (15–19 juillet). T1 qualifié (3-1 vs
+  DK en finale).\n16 équipes\, prize pool 2 000 000 USD. T1 en Pool 2 (Gen.
+ G\, AG.AL\, LYON).\nFormat : 4 groupes GSL (BO1/BO3) → Playoff single-élim
+ .\nFiabilité : ÉLEVÉE. Matchs précis TBD.\nSource : https://escharts.com/n
+ ews/t1-secure-lol-esports-world-cup-2026-spot-qualifier-crosses-500k-peak-
+ viewers
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-lck-rounds34@ics-agent
-DTSTAMP:20260622T191809Z
+DTSTAMP:20260630T195508Z
 SEQUENCE:1
 STATUS:TENTATIVE
 DTSTART;VALUE=DATE:20260722
 DTEND;VALUE=DATE:20260723
 SUMMARY:LCK 2026 Rounds 3-4 – 1er jour (date estimée) — T1
 LOCATION:CHZZK LoL Park\, Séoul\, Corée du Sud
-DESCRIPTION:Début estimé des LCK 2026 Rounds 3-4 (saison régulière été).\n1
- 0 équipes\, double round-robin BO3. Horaires typiques : 11h00–15h00 Paris 
- (18h00–22h00 KST).\nTop 3 LCK → qualification directe Worlds 2026.\nFiabil
- ité : FAIBLE — date de début NON OFFICIELLE (éstimée post-MSI/EWC).\n→ Mis
- e à jour dès annonce officielle LCK.\nSource : https://en.wikipedia.org/wi
- ki/2026_LCK_season
+DESCRIPTION:Début estimé LCK 2026 Rounds 3-4 (saison régulière été).\n10 éq
+ uipes\, double round-robin BO3. Horaires : 11h00–15h00 Paris (18h00–22h00 
+ KST).\nFiabilité : FAIBLE — date NON OFFICIELLE.\nSource : https://en.wiki
+ pedia.org/wiki/2026_LCK_season
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-t1-homeground2@ics-agent
-DTSTAMP:20260622T191809Z
+DTSTAMP:20260630T195508Z
 SEQUENCE:1
 STATUS:CONFIRMED
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:T1 Home Ground 2026 #2 – J1 (KSPO Dome\, Séoul)
 LOCATION:KSPO Dome\, Séoul\, Corée du Sud
-DESCRIPTION:Début du T1 Home Ground 2026 #2 (14–16 août\, KSPO Dome).\nMatc
- hs LCK Rounds 3-4 officiels intégrés dans un événement fans.\nAnnoncé offi
- ciellement le 28 janvier 2026 par T1.\nFiabilité : ÉLEVÉE — dates annonce 
- officielle T1. Matchs précis TBD.\nSource : https://en.wikipedia.org/wiki/
- 2026_LCK_season
+DESCRIPTION:Début T1 Home Ground 2026 #2 (14–16 août\, KSPO Dome).\nMatchs 
+ LCK officiels + festival fans. Annoncé le 28/01/2026.\nFiabilité : ÉLEVÉE.
+  Matchs précis TBD.\nSource : https://en.wikipedia.org/wiki/2026_LCK_seaso
+ n
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-lck-playoffs2026@ics-agent
-DTSTAMP:20260622T191809Z
+DTSTAMP:20260630T195508Z
 SEQUENCE:1
 STATUS:TENTATIVE
 DTSTART;VALUE=DATE:20260830
 DTEND;VALUE=DATE:20260831
 SUMMARY:LCK 2026 Season Playoffs – J1 (date estimée) → Worlds
 LOCATION:KSPO Dome\, Séoul\, Corée du Sud
-DESCRIPTION:Début estimé du LCK 2026 Season Playoffs (double-élimination BO
- 5).\nLCK Finals Weekend : 12–13 sept. au KSPO Dome. Top 3 → Worlds 2026.\n
- Fiabilité : MOYENNE — structure confirmée\, date début approximative.\n→ M
- ise à jour dès le bracket officiel.\nSource : https://en.wikipedia.org/wik
- i/2026_LCK_season
+DESCRIPTION:Début estimé LCK 2026 Season Playoffs (double-élim.\, BO5).\nFi
+ nals Weekend : 12–13 sept. KSPO Dome. Top 3 → Worlds 2026.\nFiabilité : MO
+ YENNE — structure OK\, date début approx.\nSource : https://en.wikipedia.o
+ rg/wiki/2026_LCK_season
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-worlds2026-playin@ics-agent
-DTSTAMP:20260622T191809Z
+DTSTAMP:20260630T195508Z
 SEQUENCE:1
 STATUS:CONFIRMED
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:Worlds 2026 – Play-In J1 (Los Angeles)
 LOCATION:Riot Games Arena\, Los Angeles\, CA\, États-Unis
-DESCRIPTION:Début du Worlds 2026 Play-In Stage (4 équipes\, double-élim. BO
- 5 → 1 qualifié Swiss).\nT1 probable si top 3 LCK Playoffs (tenants du titr
- e 3×).\nFiabilité : ÉLEVÉE (date + lieu confirmés Riot) — T1 participation
-  conditionnelle.\nSource : https://lolesports.com/en-US/news/msi-and-world
- s-updates
+DESCRIPTION:Début Worlds 2026 Play-In (4 équipes\, double-élim. BO5 → 1 qua
+ lifié Swiss).\nT1 probable si top 3 LCK Playoffs. Fiabilité : ÉLEVÉE.\nSou
+ rce : https://lolesports.com/en-US/news/msi-and-worlds-updates
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-worlds2026-swiss1@ics-agent
-DTSTAMP:20260622T191809Z
+DTSTAMP:20260630T195508Z
 SEQUENCE:1
 STATUS:CONFIRMED
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Worlds 2026 – Swiss Stage S1 J1 (Allen\, TX)
 LOCATION:Credit Union of Texas Event Center\, Allen\, TX\, États-Unis
-DESCRIPTION:Début du Worlds 2026 Swiss Stage Semaine 1 (23–26 oct.). 16 équ
- ipes.\nFiabilité : ÉLEVÉE — dates & lieu confirmés Riot Games.\nSource : h
- ttps://lolesports.com/en-US/news/msi-and-worlds-updates
+DESCRIPTION:Début Worlds 2026 Swiss S1 (23–26 oct.). 16 équipes.\nFiabilité
+  : ÉLEVÉE.\nSource : https://lolesports.com/en-US/news/msi-and-worlds-upda
+ tes
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-worlds2026-swiss2@ics-agent
-DTSTAMP:20260622T191809Z
+DTSTAMP:20260630T195508Z
 SEQUENCE:1
 STATUS:CONFIRMED
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Worlds 2026 – Swiss Stage S2 J1 (Allen\, TX)
 LOCATION:Credit Union of Texas Event Center\, Allen\, TX\, États-Unis
-DESCRIPTION:Début du Worlds 2026 Swiss Stage Semaine 2 (28–31 oct.).\nFiabi
- lité : ÉLEVÉE — dates & lieu confirmés Riot Games.\nSource : https://loles
- ports.com/en-US/news/msi-and-worlds-updates
+DESCRIPTION:Début Worlds 2026 Swiss S2 (28–31 oct.).\nFiabilité : ÉLEVÉE.\n
+ Source : https://lolesports.com/en-US/news/msi-and-worlds-updates
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-worlds2026-knockout@ics-agent
-DTSTAMP:20260622T191809Z
+DTSTAMP:20260630T195508Z
 SEQUENCE:1
 STATUS:CONFIRMED
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Worlds 2026 – Knockout Stage J1 (Allen\, TX)
 LOCATION:Credit Union of Texas Event Center\, Allen\, TX\, États-Unis
-DESCRIPTION:Début du Worlds 2026 Knockout Stage : Quarts 3–6/11\, Demis 7–8
- /11 (single-élim. BO5).\nFiabilité : ÉLEVÉE — dates & lieu confirmés Riot 
- Games.\nSource : https://lolesports.com/en-US/news/msi-and-worlds-updates
+DESCRIPTION:Début Worlds 2026 KO Stage : Quarts 3–6/11\, Demis 7–8/11 (BO5)
+ .\nFiabilité : ÉLEVÉE.\nSource : https://lolesports.com/en-US/news/msi-and
+ -worlds-updates
 END:VEVENT
 BEGIN:VEVENT
 UID:t1-lol-2026-worlds2026-final@ics-agent
-DTSTAMP:20260622T191809Z
+DTSTAMP:20260630T195508Z
 SEQUENCE:1
 STATUS:CONFIRMED
 DTSTART;VALUE=DATE:20261114
@@ -224,9 +253,8 @@ DTEND;VALUE=DATE:20261115
 SUMMARY:Worlds 2026 – Grand Final (Barclays Center\, Brooklyn)
 LOCATION:Barclays Center\, Brooklyn\, New York\, États-Unis
 DESCRIPTION:Worlds 2026 Grand Final — Barclays Center\, Brooklyn.\nT1 tenan
- ts du titre (3× champions consécutifs 2023-2024-2025).\nHeure de début Par
- is TBD (généralement ~05h00 CEST/CET).\nFiabilité : ÉLEVÉE (date + lieu co
- nfirmés) — heure TBD (FAIBLE).\n→ Mise à jour dès l’heure officielle publi
- ée.\nSource : https://lolesports.com/en-US/news/msi-and-worlds-updates
+ ts du titre (3× 2023-2024-2025). Heure TBD (~05h00 CET).\nFiabilité : ÉLEV
+ ÉE (date + lieu) — heure TBD.\nSource : https://lolesports.com/en-US/news/
+ msi-and-worlds-updates
 END:VEVENT
 END:VCALENDAR
